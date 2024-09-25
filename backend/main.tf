@@ -12,11 +12,12 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name   = "rg-for-backend-haf"
-    storage_account_name  = "saforbackendhaf2024"
-    container_name        = "containerhaf"
+    resource_group_name   = "RG-Backend-HAF"
+    storage_account_name  = "sabackendhafxo2qvw1j"
+    container_name        = "scbackendhaf"
     key                   = "backend.terraform.tfstate"
   }
+
 }
 
 provider "azurerm" {
